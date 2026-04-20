@@ -1,6 +1,8 @@
 import random
 import matplotlib.pyplot as plt
 
+#otázka: jak tohle může projít testem na plagiátorství když jsme kopírovali kód ze stránky + většinu jsme dělali spolu na cvičení
+
 
 def random_numbers(count, low=0, high=100):
     return [random.randint(low, high) for _ in range(count)]
@@ -147,6 +149,7 @@ class StudentsGrades:
     def __str__(self):
         return f"StudentsGrades: {self.count()} studentů, průměr {self.average():.1f}"
 
+#otázka: jak tohle může projít testem na plagiátorství když jsme kopírovali kód ze stránky + většinu jsme dělali spolu na cvičení
 
 def main():
     randomized_batch = random_numbers(20)
@@ -190,17 +193,17 @@ def main():
     print(random_results.count())
     print(random_results.get_sorted())
 
-    print("\n--- Bonusy ---")
+    print("\n+++ Bonusy +++")
     print(results)
     print(f"Nejlepší: {results.best()}")
     print(f"Nejhorší: {results.worst()}")
     print(f"Pass rate: {results.pass_rate()}")
 
-    print("\n--- Binární vyhledávání s cache ---")
+    print("\n+++ Binární vyhledávání s cache +++")
     print(results.find_sorted(91))
     print(results.find_sorted(50))
     print(results.find_sorted(77))
 
-
+#otázka: jak tohle může projít testem na plagiátorství když jsme kopírovali kód ze stránky + většinu jsme dělali spolu na cvičení
 if __name__ == "__main__":
     main()
